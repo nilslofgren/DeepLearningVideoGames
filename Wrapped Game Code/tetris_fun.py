@@ -4,6 +4,9 @@
 
 import random, time, pygame, sys
 from pygame.locals import *
+import os
+os.putenv('SDL_VIDEODRIVER', 'fbcon')
+os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 FPS = 25
 WINDOWWIDTH = 640
